@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Landing } from "./screens/Landing";
+import { Landing } from "./screens/Landing/Landing";
 
 export function AppRoutes() {
   return (

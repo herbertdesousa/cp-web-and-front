@@ -14,7 +14,7 @@
   @apply /* mobile */
     sticky justify-between w-full left-0 flex bg-highlight px-6 py-8
     /* table / desktop */
-    md:px-16 md:gap-16 md:w-fit md:justify-start;
+    md:px-16 md:gap-16 md:w-fit md:justify-start z-50;
 }
 
 .nav-main-triangle {

@@ -65,6 +65,12 @@ export function Landing() {
         <span className="absolute top-0 right-16 bg-highlight opacity-20 h-screen w-8"></span>
         <span className="absolute top-0 right-10 bg-highlight opacity-20 h-screen w-4"></span>
       </section>
+
+      <section className="section">
+        {/*  */}
+        {/*  */}
+        {/*  */}
+      </section>
     </div>
   );
 }

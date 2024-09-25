@@ -42,10 +42,28 @@ export function Landing() {
         <span className="nav-main-triangle-2"></span>
       </nav>
 
-      <section className="h-screen w-full">
-        {/*  */}
-        {/*  */}
-        {/*  */}
+      <section className="section relative">
+        <div className="pt-16 flex gap-y-16 flex-col items-center">
+          <h2 className="font-bold text-4xl uppercase ">Pódio da Mahindra</h2>
+
+          <div className="flex flex-col flex-1 gap-y-2">
+            <img
+              src="1st-place-mahindra.png"
+              alt="Primeiro Lugar da Mahindra"
+              className="h-64"
+            />
+
+            <div className="flex flex-col items-center py-1">
+              <strong className="font-bold text-lg uppercase">
+                Devins Lavine
+              </strong>
+              <strong className="text-highlight uppercase">Top 1</strong>
+            </div>
+          </div>
+        </div>
+
+        <span className="absolute top-0 right-16 bg-highlight opacity-20 h-screen w-8"></span>
+        <span className="absolute top-0 right-10 bg-highlight opacity-20 h-screen w-4"></span>
       </section>
     </div>
   );

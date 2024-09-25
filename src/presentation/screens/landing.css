@@ -30,3 +30,7 @@
   clip-path: polygon(0 0, 26% 0, 100% 100%, 71% 100%);
   @apply bg-highlight;
 }
+
+.section {
+  @apply w-full h-screen pt-[88px];
+}

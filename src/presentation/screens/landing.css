@@ -1,0 +1,32 @@
+.nav-top {
+  background: linear-gradient(
+    180deg,
+    rgba(2, 2, 2, 0.6) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.main-nav {
+  top: 0;
+  margin-top: -88px;
+  height: 88px;
+
+  @apply /* mobile */
+    sticky justify-between w-full left-0 flex bg-highlight px-6 py-8
+    /* table / desktop */
+    md:px-16 md:gap-16 md:w-fit md:justify-start;
+}
+
+.nav-main-triangle {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 60px 88px 0px;
+  border-color: transparent transparent #0000ff transparent;
+  transform: rotate(0deg);
+}
+
+.nav-main-triangle-2 {
+  clip-path: polygon(0 0, 26% 0, 100% 100%, 71% 100%);
+  @apply bg-highlight;
+}

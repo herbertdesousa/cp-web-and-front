@@ -49,7 +49,11 @@ export function Landing() {
         <LandingStanding />
       </div>
 
-      <section className="section flex  bg-highlight"></section>
+      <section className="section flex  bg-highlight">
+        {/*  */}
+        {/*  */}
+        {/*  */}
+      </section>
     </div>
   );
 }

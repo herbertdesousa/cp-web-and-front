@@ -1,4 +1,4 @@
-import { LocalStorageDatasource } from "../data/LocalstorageDatasource";
+import { LocalStorageDatasource } from "../data/LocalStorageDatasource";
 
 type GetGreatestPlayerRes = {
   name: string;

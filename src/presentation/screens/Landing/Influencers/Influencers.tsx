@@ -1,20 +1,26 @@
+import { controllers } from "../../../../domain/Controllers";
 import { InfluencerCard } from "./InfluencerCard";
 import { InfluencersRow } from "./InfluencerRow";
 
+const INFLUENCER_UK = controllers.influencer.GetUK();
+const INFLUENCER_BRAZILIAN = controllers.influencer.GetBrazilian();
+const INFLUENCER_RUSSIAN = controllers.influencer.GetRussian();
+const INFLUENCER_USA = controllers.influencer.GetUSA();
+
 export function Influencers() {
   return (
-    <section className="w-full p-8 flex flex-col min-h-screen bg-highlight gap-8 md:flex-row">
+    <section className="w-full p-8 flex flex-col justify-center min-h-screen bg-highlight gap-8 md:flex-row">
       <InfluencersRow>
         <InfluencerCard
           img={{
-            src: "influencer-russo.png",
-            alt: "Influencer Russo",
+            src: INFLUENCER_UK.imgUrl,
+            alt: INFLUENCER_UK.imgAlt,
           }}
         />
         <InfluencerCard
           img={{
-            src: "influencer-inutilismo.png",
-            alt: "Influencer Brasileiro",
+            src: INFLUENCER_BRAZILIAN.imgUrl,
+            alt: INFLUENCER_BRAZILIAN.imgAlt,
           }}
         />
       </InfluencersRow>
@@ -33,14 +39,14 @@ export function Influencers() {
       <InfluencersRow>
         <InfluencerCard
           img={{
-            src: "influencer-usa.png",
-            alt: "Influencer EUA",
+            src: INFLUENCER_RUSSIAN.imgUrl,
+            alt: INFLUENCER_RUSSIAN.imgAlt,
           }}
         />
         <InfluencerCard
           img={{
-            src: "influencer-freddie.png",
-            alt: "Influencer Freddie",
+            src: INFLUENCER_USA.imgUrl,
+            alt: INFLUENCER_USA.imgAlt,
           }}
         />
       </InfluencersRow>

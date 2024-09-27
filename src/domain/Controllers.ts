@@ -1,8 +1,10 @@
-import { LocalStorageDatasource } from "../data/LocalstorageDatasource";
+import { LocalStorageDatasource } from "../data/LocalStorageDatasource";
+import { InfluencersController } from "./InfluencersController";
 import { StandingController } from "./StandingController";
 
-const standingController = new StandingController(new LocalStorageDatasource());
+const localStorageDatasource = new LocalStorageDatasource()
 
 export const controllers = {
-  standing: standingController,
+  standing: new StandingController(localStorageDatasource),
+  influencer: new InfluencersController(localStorageDatasource),
 };

@@ -1,8 +1,9 @@
 import classNames from "classnames";
-import "./landing.css";
 import { Link } from "react-router-dom";
+import "./landing.css";
 
 import { LandingStanding } from "./LandingStanding";
+import { Influencers } from "./Influencers/Influencers";
 
 const MAIN_LINK = [
   { id: "1", to: "/", label: "Resultados" },
@@ -49,11 +50,7 @@ export function Landing() {
         <LandingStanding />
       </div>
 
-      <section className="section flex  bg-highlight">
-        {/*  */}
-        {/*  */}
-        {/*  */}
-      </section>
+      <Influencers />
     </div>
   );
 }

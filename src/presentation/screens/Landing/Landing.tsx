@@ -4,6 +4,7 @@ import "./landing.css";
 
 import { LandingStanding } from "./LandingStanding";
 import { Influencers } from "./Influencers/Influencers";
+import { News } from "./News/News";
 
 const MAIN_LINK = [
   { id: "1", to: "/", label: "Resultados" },
@@ -52,29 +53,7 @@ export function Landing() {
 
       <Influencers />
 
-      <section className="w-full min-h-screen">
-        <div className="w-full px-8 pt-16 pb-32 md:pt-24 md:pb-48 nav-news">
-          <h3 className="flex text-center text-white text-4xl font-bold items-center uppercase">
-            últimas notícias
-          </h3>
-        </div>
-
-        <ul className="flex flex-col gap-4 px-4 -mt-20 md:flex-row">
-          {[1, 2, 3].map(() => (
-            <li className="flex flex-col">
-              <img
-                src="news-1.png"
-                alt="Noticia 1"
-                className="border-8 border-white rounded-lg"
-              />
-
-              <strong className="text-center">
-                POLE POSITION: Participação na corrida de Marks Petter
-              </strong>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <News />
     </div>
   );
 }

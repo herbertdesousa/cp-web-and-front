@@ -2,13 +2,14 @@ import classNames from "classnames";
 import { Link } from "react-router-dom";
 import "./landing.css";
 
-import { LandingStanding } from "./LandingStanding";
+import { ROUTES } from "../ROUTES";
 import { Influencers } from "./Influencers/Influencers";
+import { LandingStanding } from "./LandingStanding";
 import { News } from "./News/News";
 
 const MAIN_LINK = [
   { id: "1", to: "/", label: "Resultados" },
-  { id: "2", to: "/", label: "Noticias" },
+  { id: "2", to: ROUTES.news, label: "Noticias" },
   { id: "3", to: "/", label: "Times" },
 ];
 

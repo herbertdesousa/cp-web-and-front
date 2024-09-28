@@ -54,6 +54,10 @@ export function Landing() {
       <Influencers />
 
       <News />
+
+      <footer className="flex text-white  bg-[#09099D] p-4 text-lg font-medium">
+        Copyright 2024
+      </footer>
     </div>
   );
 }

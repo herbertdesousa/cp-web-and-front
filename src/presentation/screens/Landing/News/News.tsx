@@ -8,8 +8,8 @@ const NEWS = controllers.news.GetNews();
 export function News() {
   return (
     <section className="w-full min-h-screen pb-8">
-      <div className="flex items-center justify-between w-full px-8 pt-16 pb-32 md:pt-24 md:pb-48 nav-news">
-        <h3 className="flex text-center text-white text-4xl font-bold items-center uppercase">
+      <div className="flex items-center justify-between w-full px-4 md:px-8 pt-16 pb-32 md:pt-24 md:pb-48 nav-news">
+        <h3 className="flex text-white text-4xl font-bold items-center uppercase md:text-center">
           últimas notícias
         </h3>
 

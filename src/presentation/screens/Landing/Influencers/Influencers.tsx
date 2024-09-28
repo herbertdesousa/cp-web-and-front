@@ -12,14 +12,14 @@ export function Influencers() {
     <section className="w-full p-8 flex flex-col justify-center min-h-screen bg-highlight gap-8 md:flex-row">
       <InfluencersRow>
         <InfluencerCard
-          votes={0}
+          votes={INFLUENCER_UK.votes}
           img={{
             src: INFLUENCER_UK.imgUrl,
             alt: INFLUENCER_UK.imgAlt,
           }}
         />
         <InfluencerCard
-          votes={0}
+          votes={INFLUENCER_BRAZILIAN.votes}
           img={{
             src: INFLUENCER_BRAZILIAN.imgUrl,
             alt: INFLUENCER_BRAZILIAN.imgAlt,
@@ -40,14 +40,14 @@ export function Influencers() {
 
       <InfluencersRow>
         <InfluencerCard
-          votes={0}
+          votes={INFLUENCER_RUSSIAN.votes}
           img={{
             src: INFLUENCER_RUSSIAN.imgUrl,
             alt: INFLUENCER_RUSSIAN.imgAlt,
           }}
         />
         <InfluencerCard
-          votes={0}
+          votes={INFLUENCER_USA.votes}
           img={{
             src: INFLUENCER_USA.imgUrl,
             alt: INFLUENCER_USA.imgAlt,

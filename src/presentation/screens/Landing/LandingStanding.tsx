@@ -24,7 +24,18 @@ export function LandingStanding() {
             <strong className="font-bold text-lg uppercase">
               {greatestPlayer.name}
             </strong>
-            <strong className="text-highlight uppercase">Top 1</strong>
+
+            <div className="grid grid-cols-2 gap-x-2">
+              <strong className="col-span-2 text-center text-highlight uppercase">
+                Top 1
+              </strong>
+              <strong className="text-sm text-highlight uppercase">
+                +10 Vitórias
+              </strong>
+              <strong className="text-sm text-highlight uppercase">
+                258 Voltas
+              </strong>
+            </div>
           </div>
         </div>
       </div>

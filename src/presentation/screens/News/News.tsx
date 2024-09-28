@@ -1,4 +1,5 @@
 import { controllers } from "../../../domain/Controllers";
+import { NewsItem } from "../../components/NewsItem";
 
 const NEWS = controllers.news.GetNews();
 
@@ -13,15 +14,12 @@ export function News() {
 
       <ul className="flex flex-col gap-4 px-4 -mt-20 md:flex-row">
         {NEWS.map((news) => (
-          <li key={news.id} className="flex items-center flex-col">
-            <img
-              src={news.thumbnailUrl}
-              alt={news.title}
-              className="border-8 border-white h-[228px] w-[408px] object-cover rounded-lg"
-            />
-
-            <strong className="text-center">{news.title}</strong>
-          </li>
+          <NewsItem
+            key={news.id}
+            id={news.id}
+            thumbnailUrl={news.thumbnailUrl}
+            title={news.title}
+          />
         ))}
       </ul>
     </section>

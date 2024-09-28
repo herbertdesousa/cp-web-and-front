@@ -7,12 +7,6 @@ import { Influencers } from "./Influencers/Influencers";
 import { LandingStanding } from "./LandingStanding";
 import { News } from "./News/News";
 
-const MAIN_LINK = [
-  { id: "1", to: "/", label: "Resultados" },
-  { id: "2", to: ROUTES.news, label: "Noticias" },
-  { id: "3", to: "/", label: "Times" },
-];
-
 export function Landing() {
   return (
     <div>
@@ -35,15 +29,24 @@ export function Landing() {
         </section>
 
         <nav className="main-nav">
-          {MAIN_LINK.map((link) => (
-            <Link
-              key={link.id}
-              to={link.to}
-              className="uppercase text-white font-semibold transform hover:-translate-y-1 transition"
-            >
-              {link.label}
-            </Link>
-          ))}
+          <a
+            href="#podio"
+            className="uppercase text-white font-semibold transform hover:-translate-y-1 transition"
+          >
+            Pódio
+          </a>
+          <Link
+            to={ROUTES.news}
+            className="uppercase text-white font-semibold transform hover:-translate-y-1 transition"
+          >
+            Noticias
+          </Link>
+          <Link
+            to="/"
+            className="uppercase text-white font-semibold transform hover:-translate-y-1 transition"
+          >
+            Influencers
+          </Link>
 
           <span className="absolute right-[-60px] top-0 hidden md:block nav-main-triangle"></span>
           <span className="nav-main-triangle-2"></span>

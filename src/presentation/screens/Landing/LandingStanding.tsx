@@ -4,7 +4,10 @@ const greatestPlayer = controllers.standing.GetGreatestPlayer();
 
 export function LandingStanding() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center">
+    <section
+      id="podio"
+      className="relative min-h-screen flex items-center justify-center"
+    >
       <div className="pt-16 flex gap-y-16 flex-col items-center">
         <h2 className="font-bold text-4xl uppercase text-center">
           Pódio da Mahindra

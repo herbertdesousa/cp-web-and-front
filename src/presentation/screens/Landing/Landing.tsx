@@ -41,12 +41,12 @@ export function Landing() {
           >
             Noticias
           </Link>
-          <Link
-            to="/"
+          <a
+            href="/#influencers"
             className="uppercase text-white font-semibold transform hover:-translate-y-1 transition"
           >
             Influencers
-          </Link>
+          </a>
 
           <span className="absolute right-[-60px] top-0 hidden md:block nav-main-triangle"></span>
           <span className="nav-main-triangle-2"></span>

@@ -9,7 +9,10 @@ const INFLUENCER_USA = controllers.influencer.GetUSA();
 
 export function Influencers() {
   return (
-    <section className="w-full p-8 flex flex-col justify-center min-h-screen bg-highlight gap-8 md:flex-row">
+    <section
+      id="influencers"
+      className="w-full p-8 flex flex-col justify-center min-h-screen bg-highlight gap-8 md:flex-row"
+    >
       <InfluencersRow>
         <InfluencerCard
           votes={INFLUENCER_UK.votes}

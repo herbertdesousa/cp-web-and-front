@@ -7,9 +7,11 @@ type News = {
 };
 
 export class NewsController {
-  constructor(private datasource: LocalStorageDatasource) {}
+  private storage: any;
 
-  private storage = this.datasource.get("news");
+  constructor(private datasource: LocalStorageDatasource) {
+    this.storage = this.datasource.get("news");
+  }
 
   // busca element em index e garante default value
   private GetNewsAt(index: number, defaultValue: News) {

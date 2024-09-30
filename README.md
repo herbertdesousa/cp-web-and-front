@@ -1,50 +1,18 @@
-# React + TypeScript + Vite
+# Formula E
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h3>Projeto desenvolvido utilizando as seguintes tecnologias:</h3>
+- React.js
+- Taiwind.css
 
-Currently, two official plugins are available:
+<h3>Para rodar na sua mÃ¡quina:</h3>
+- npm i
+- npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h3>Projeto desenvolvido afim de promover a FÃ³rmula E, te trazendo tudo de mais novo que temos de notÃ­cias e sobre influenciadores. AlÃ©m de poder acompanhar suas equipes prediletas e seus competidores. Acompanhe tambÃ©m o resultado de corridas e vote em seus influenciadores preferidos.</h3>
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+<h3>Aqui abaixo estÃ¡ nossa equipe de desenvolvedores:</h3>
+- LÃ©o Masago RM:557768
+- Herbert Souza RM: 555701
+- Alexandre Assis RM: 558927
+- Eduardo Tomazela RM: 556807
+- Gustavo Ramalho RM: 554582 

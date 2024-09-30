@@ -1,26 +1,7 @@
-import { useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
-
-function useIdParam() {
-  const params = useParams();
-  const navigate = useNavigate();
-
-  const { id } = params;
-
-  useEffect(() => {
-    if (!id) {
-      alert("Falha ao encontrar o id");
-      navigate(-1);
-    }
-  }, []);
-
-  return id as string;
-}
+import { useNavigate } from "react-router-dom";
 
 export function NewsDetails() {
   const navigate = useNavigate();
-
-  const id = useIdParam();
 
   function handleGoBack() {
     navigate(-1);
